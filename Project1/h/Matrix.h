@@ -28,18 +28,18 @@ std::vector<std::vector<int>> Matrix::resize(const std::vector<std::vector<int>>
 }
 void Matrix::mult(const std::vector<std::vector<int>> &matA, const std::vector<std::vector<int>> &matB, std::vector<std::vector<int>> &matC) {
     for (int i = 0; i < matC.size(); i++) {
-        for (int j = 0; j < matC.size(); j++) {
-            for (int k = 0; k < matC.size(); k++) {
+        for (int k = 0; k < matC.size(); k++) {
+            for (int j = 0; j < matC.size(); j++) {
                 matC[i][j] += matA[i][k] * matB[k][j];
             }
         }
-    }   
+    }  
 }
 std::vector<std::vector<int>> Matrix::mult(const std::vector<std::vector<int>> &matA, const std::vector<std::vector<int>> &matB) {
     auto matC = Matrix::generateMatrix(matA.size(),0);
-    for (int i = 0; i < matA.size(); i++) {
-        for (int k = 0; k < matA.size(); k++) {
-            for (int j = 0; j < matA.size(); j++) {
+    for (int i = 0; i < matC.size(); i++) {
+        for (int k = 0; k < matC.size(); k++) {
+            for (int j = 0; j < matC.size(); j++) {
                 matC[i][j] += matA[i][k] * matB[k][j];
             }
         }

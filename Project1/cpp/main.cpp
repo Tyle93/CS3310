@@ -8,8 +8,8 @@ void strassenRun(int n);
 int main(){
     srand(time(NULL));
     //standardMult(32);
-    divideAndConquer(4);
-    //strassenRun(4);
+    //divideAndConquer(4);
+    strassenRun(4);
 }
 
 void standardMult(int n){
