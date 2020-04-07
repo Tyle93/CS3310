@@ -17,10 +17,11 @@ int Matrix::getNextPower2(int n) {
     return pow(2, int(ceil(log2(n))));
 }
 std::vector<std::vector<int>> Matrix::resize(const std::vector<std::vector<int>> &mat,int n ){
+    int size = mat.size();
     int m = getNextPower2(n);
     auto newMat = Matrix::generateMatrix(m,0);
-    for(int i = 0; i < n; i++){
-        for(int j = 0; j < n; j++){
+    for(int i = 0; i < size; i++){
+        for(int j = 0; j < size; j++){
             newMat[i][j] = mat[i][j];
         }
     }
