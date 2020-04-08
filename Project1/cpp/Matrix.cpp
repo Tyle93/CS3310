@@ -12,7 +12,6 @@ namespace Matrix{
     std::vector<std::vector<int>> generateMatrix(int n, int defaultVal);
     int getNextPower2(int n);
     std::vector<std::vector<int>> resize(const std::vector<std::vector<int>> &mat,int n );
-    void mult(const std::vector<std::vector<int>> &matA, const std::vector<std::vector<int>> &matB, std::vector<std::vector<int>> &matC) ;
     std::vector<std::vector<int>> mult(const std::vector<std::vector<int>>& matA, const std::vector<std::vector<int>> &matB) ;
     std::vector<std::vector<int>> add(const std::vector<std::vector<int>> &A,const std::vector<std::vector<int>> &B);
     std::vector<std::vector<int>> sub(const std::vector<std::vector<int>> &A,const std::vector<std::vector<int>> &B);
